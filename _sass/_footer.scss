@@ -1,0 +1,14 @@
+.social_icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social_icons img{
+    width: 40%;
+}
+
+.social_icons img:hover{
+    width: 50%;
+    border: 2px solid lightblue;
+    border-radius: 50%;
+}

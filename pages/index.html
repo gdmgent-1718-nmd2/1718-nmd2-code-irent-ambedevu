@@ -3,11 +3,53 @@ layout   : default
 permalink: /
 # Custom Page Variables
 # ─────────────────────
-title: Bootstrap 4 &mdash; Voorbeeld
+title: Teddy2Rent
 ---
-<div class="jumbotron">
-    <h1 class="display-3">{{ page.title }}</h1>
+    <!--<div class="jumbotron">
+        <h1 class="display-3">{{ page.title }}</h1>
+    </div>
+
+    <a class="btn btn-primary" href="http://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap 4 documentation</a> -->
+<div class="row">
+    <div class="col-5"></div>
+
+    <div class="col-7 col-md-7" id="top">
+        <p>Hallo daar! <br> Ik ben Teddy.</p>
+        <a class="btn btn-primary" href="reservatie.html">Reserveer mij</a>
+    </div>
+
+    <div class="col-9 col-md-5">
+        <img src="{{ site.baseurl }}/images/teddy_1.png" class="img-fluid" alt="teddy">
+    </div>
+
+    <div class="col-12">
+        <img src="{{ site.baseurl }}/images/pijltje_beneden.png" class="img-fluid" alt="pijltje naar beneden">
+    </div> 
 </div>
-<div class="container">
-    <a class="btn btn-primary" href="http://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap 4 documentation</a>
+
+<div class="row">
+    <div class="col-3 col-lg-4 ">
+        <a href="{{ site.baseurl }}{{ reservatie.html }}"><img src="{{ site.baseurl }}/images/teddy_1.png" class="img-fluid" alt="teddy"></a>
+    </div>
+
+    <div class="col-9 col-lg-4 ">
+        <p>Gaat u graag naar de film?</p>
+        <p>Maar bent u het beu dat u gezelschap niet kan zwijgen of soms zelfs spoilt?</p>
+        <p>Hebt u van die luidruchtige kinderen die niet hun eigen knuffel mogen mee nemen?</p>
+        <p>Of gaat u graag alleen naar de bios maar haat u die rare blikken van anderen?</p>
+        <p>Treur dan zeker niet langer want wij hebben de perfecte oplossing voor u! </p>
+        <p>Huur dan nu onze geweldige Mr. Teddy! </p>
+        <p>Hij is het zachtste, meest stille en leukste gezelschap ooit!</p>
+        <p>Dit kan jij allemaal ervaren voor maar 5 euro per uur!</p>
+    </div>
+
+    <div class="col-12" >
+        <p>Twijfel dan zeker niet langer! Klik op teddy zijn buikje en maak je afspraak met onze Mr. Teddy.</p>
+    </div>
+
+    <div class="col-12">
+        <a href="{{ site.baseurl }}{{ #top }}"><img src="{{ site.baseurl }}/images/pijltje_boven.png" class="img-fluid" alt="pijltje naar beneden">
+        </a>
+    </div>
+
 </div>

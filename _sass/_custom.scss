@@ -1,0 +1,20 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2{
+    font-family: 'Playfair Display', serif;
+}
+
+.btn{
+    background-color: lightskyblue;
+}
+
+ul img{
+    width: 15px;
+    /*list-style-image: url('{{ site.basurl }}/images/lijstje.png')*/
+} 
+
+ul {
+    list-style-image: url('lijstje.png')
+}
