@@ -6,20 +6,111 @@ permalink: reservatie_gegevens
 title: Reservatie
 ---
 
-<div class="row">
-    <div class="col-12">
-        <h2>Reservatie</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-7 col-md-4 title">
+            <h1>Reservatie</h1>
+        </div>
     </div>
-</div>
     
-<div class="row">
-    <div class="col-12">
-        <nav aria-label="breadcrumb" role="navigation">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page">gegevens</li>
-                <li class="breadcrumb-item">betalen</li>
-                <li class="breadcrumb-item">bevestiging</li>
-            </ol>
-        </nav>
+    <div class="row">
+        <div class="col-12">
+            <p>U gaat een reservatie plaatsen voor  Teddy op 01/01/2017. Moment: middag. <br>
+                <span class="note">Indien dit niet juist is <a href="reservatie.html">klik hier</a> </span>
+            </p>
+        </div>
+
+        <div class="col-12">
+            <p>U regestratie is bijna voltooid.Nog een paar stappen te gaan.</p>
+            <nav aria-label="breadcrumb" role="navigation">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">gegevens</li>
+                    <li class="breadcrumb-item">betalen</li>
+                    <li class="breadcrumb-item">bevestiging</li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="col-12">
+            <form>
+                <!-- achternaam -->
+                <div class="form-group">
+                    <label for="last-name">Naam: <img src="{{ site.baseurl }}/images/lijstje.png"  alt="verplicht veld"></label>
+                    <input type="last-name" class="form-control" id="last-name" placeholder="...">    
+                </div>
+
+                <!-- voornaam -->
+                <div class="form-group">
+                    <label for="name">Voornaam: <img src="{{ site.baseurl }}/images/lijstje.png"  alt="verplicht veld"></label>
+                    <input type="name" class="form-control" id="name" placeholder="...">    
+                </div>
+
+                <!-- mail -->
+                <div class="form-group">
+                    <label for="mail">e-mail: <img src="{{ site.baseurl }}/images/lijstje.png"  alt="verplicht veld"></label>
+                    <input type="e-mail" class="form-control" id="mail" placeholder="...">    
+                </div>
+
+                <!-- tel -->
+                <div class="form-group">
+                    <label for="phone_number">Telefoon:</label>
+                    <input type="phone_number" class="form-control" id="phone_number" placeholder="...">    
+                </div>
+            </form>
+        
+            <p class="note"><img src="{{ site.baseurl }}/images/lijstje.png"  alt="verplicht veld"> Verplichte velden</p>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="conditions">
+                <label class="form-check-label checkbox_round" for="conditions">
+                </label>
+                
+                <label class="form-check-label">
+                    Ik accepteer de <span class="note_hover" data-toggle="modal" data-target="#modal_conditions">gebruiksvoorwaarden</span>
+                </label>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal_conditions" tabindex="-1" role="dialog" aria-labelledby="modal_conditions_title" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title title" id="modal_conditions_title">Algemene voorwaarden</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>Bij gebruik maken van ons product vragen wij u rekening te houden met de volgende voorwaardes. 
+                                        Als u deze naleeft kunnen wij u garanderen op een uniek ervaring met onze geweldige teddy.
+                                    </p>
+                    
+                                    <p>Dit product is niet bedoeld om:</p>
+                    
+                                    <ul>
+                                        <li><img src="{{ site.baseurl }}/images/lijstje.png"  alt="bullet lijstje">Met te gooien</li>
+                                        <li><img src="{{ site.baseurl }}/images/lijstje.png" alt="bullet lijstje">Te beschadigen</li>
+                                        <li><img src="{{ site.baseurl }}/images/lijstje.png" alt="bullet lijstje">Vuil te maken</li>
+                                    </ul>
+                    
+                                    <p>Gelieve onze teddy met respect te behandelen.</p>
+                    
+                                    <p>Indien wij schade opmerken zal u hiervoor u waarborg van 10 euro niet terug krijgen met een extra schadevergoeding.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Akkoord</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="btn btn-primary" href="reservatie_betaling.html">Volgende</a>
+        </div>
     </div>
-</div>
+</div> <!--container-->

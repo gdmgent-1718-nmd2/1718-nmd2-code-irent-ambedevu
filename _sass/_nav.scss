@@ -1,0 +1,30 @@
+.navbar{
+    
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:hover, .navbar-toggler:active{
+    border: none;
+    color: rgba(255, 255, 255,1);
+}
+
+/* WERKT NIET 
+nav a{
+    color: rgba(255, 255, 255,1);
+}
+
+.navbar-brand{
+    font-size: 25px;
+    color: rgba(255, 255, 255,1);
+}*/
+
+.navbar-dark{
+    background-color: rgba(99, 101, 113, 1);
+    color: rgba(255, 255, 255,1);
+}

@@ -6,17 +6,61 @@ permalink: over_ons
 title: Contact
 ---
 
-<div class="row">
-
-    <div class="col-12">
-        <h2>Wie zijn wij</h2>
-
-        <p>Wij zijn 2 enthousiaste studentes die samen opzoek gaan naar orginele manieren om u cinemabezoek nog aangenamer te maken.</p>
-        <p>Wij proberen de mensen te bereiken die zich niet snel aangesproken voelen door de film.</p>
-        <img src="{{ site.baseurl }}/images/teddy_1.png" class="img-fluid" alt="teddy">
-        <p>Indien u vragen/ opmerkingen/ suggesties/ klachten/… hebt. Twijfeldan zeker niet om contact met onsop te nemen!</p>
-
+<div class="container">
+    <div class="row">
+        <div class="col-8 col-md-5 col-lg-3 title">
+            <h1>Wie zijn wij</h1>
+        </div>
     </div>
 
 
-</div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>Wij zijn 2 enthousiaste studentes die samen opzoek gaan naar orginele manieren om u cinemabezoek nog aangenamer te maken.</p>
+            <p>Wij proberen de mensen te bereiken die zich niet snel aangesproken voelen om alleen naar de film te gaan.</p>
+        
+            <div class="row">
+                <div class="col-5">
+                    <img src="{{ site.baseurl }}/images/teddy_1.png" class="img-fluid" alt="teddy">
+                </div><!-- geneste kolom -->
+        
+                <div class="col-7 align-self-center">
+                    <a class="btn btn-info" href="reservatie.html">Reserveer mij</a>
+                </div>
+            </div> <!-- row -->
+        </div>
+
+        <div class="col-12 col-md-6">
+            <p>Indien u vragen/ opmerkingen/ suggesties/ klachten/… hebt. Twijfeldan zeker niet om contact met onsop te nemen!</p>
+
+            <form>
+                <!-- naam -->
+                <div class="form-group">
+                    <input type="name" class="form-control" id="name" placeholder="Volledige naam">    
+                </div>
+
+                <!-- mail -->
+                <div class="form-group">
+                    <input type="e-mail" class="form-control" id="mail" placeholder="e-mail">    
+                </div>
+
+                <!-- bericht -->
+                <div class="form-group">
+                    <textarea class="form-control" rows="8" id="comment" placeholder="Uw bericht aan Teddy2Rent..."></textarea>
+                </div>
+            </form>
+        
+            <a class="btn btn-primary float-right" data-toggle="collapse" href="#collapse_thankyou" aria-expanded="false" aria-controls="collapse_thankyou">
+                 Verzenden
+            </a>
+            
+            <div class="collapse" id="collapse_thankyou">
+                <div class="card card-body card_thankyou">
+                    Dankjewel, wij reageren zo snel mogelijk!
+                    <a href="index.html"><img src="{{ site.baseurl }}/images/teddy_bedankt.png" class="img-fluid" alt="blije teddy">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div> <!-- container -->
