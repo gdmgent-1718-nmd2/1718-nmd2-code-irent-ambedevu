@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-end">
 
     <div class="container navigation">
 
@@ -19,7 +19,7 @@
               {% if page.url contains link.url %}
                   {% assign class = 'active' %}
               {% endif %}
-              {% if link.sublinks %}
+              {% if link.sublinks %} <!-- hebben wij eigenlijk niet nodig -->
                   <li class="nav-item dropdown {{ class }}"> <!-- hier onze classes toev of veranderen om onze lay-out te verkrijgen -->
                       <a href="{{ site.baseurl }}{{ link.url }}" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
                       <ul class="dropdown-menu">
@@ -32,7 +32,7 @@
                   </li>
               {% else %}
                   <li class="nav-item{{ navigation }}">
-                      <a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                      <a class="nav-link " href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
                   </li>
               {% endif %}
           {% endfor %}

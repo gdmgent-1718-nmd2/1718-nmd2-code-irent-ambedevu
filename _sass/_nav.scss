@@ -5,6 +5,11 @@
     font-size: 1em;
 }
 
+nav.navbar{
+    background-color: rgba(99, 101, 113,1)!important;
+    font-size: 20px;
+}
+
 .navbar-toggler{
     border: none;
 }
@@ -14,6 +19,12 @@
     color: rgba(255, 255, 255,1);
 }
 
+nav .navbar-nav{
+    margin-right: 40px;
+}
+nav li{
+    color:rgba(255, 255, 255,1)!important;
+}
 /* WERKT NIET 
 nav a{
     color: rgba(255, 255, 255,1);
@@ -22,9 +33,9 @@ nav a{
 .navbar-brand{
     font-size: 25px;
     color: rgba(255, 255, 255,1);
-}*/
+}
 
 .navbar-dark{
     background-color: rgba(99, 101, 113, 1);
     color: rgba(255, 255, 255,1);
-}
+}*/

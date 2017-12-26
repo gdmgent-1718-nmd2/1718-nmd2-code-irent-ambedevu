@@ -7,8 +7,8 @@ title: Reservatie
 ---
 <div class="container">
     <div class="row">
-        <div class="col-7 col-md-4  title">
-            <h1>Reservatie</h1>
+        <div class="col-7 col-md-4">
+            <h1 class="title">Reservatie</h1>
         </div>
     </div>
 
@@ -42,35 +42,208 @@ title: Reservatie
             </table>
 
             <p>Selecteer uw betaalmethode:</p>
+            <!-- collapse group -->
+            <div id="accordion" role="tablist" class="payment_methods">
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingOne">
+                        <h5 class="mb-0">
+                            <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="radios" id="radios1" value="option1" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" check>
+                                        <div class="card">
+                                            <div class="card-header" role="tab" id="headingOne">
+                                                <h5 class="mb-0">
+                                                    <img src="{{ site.baseurl }}/images/betalen_3.png" alt="belfius">
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </a>
+                        </h5>
+                    </div>
+                  
+                    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-check check_paw">
+                                    <!-- geneste kolom-->
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <input type="checkbox" class="form-check-input" id="conditions">
+                                            <label class="form-check-label checkbox_round" for="conditions">
+                                            </label>
+                                        </div><!-- einde geneste kolom -->
+                                        
+                                        <div class="col-10">
+                                            <label class="form-check-label">
+                                                QR-code scannen met de bancontact app
+                                            </label>
+                                        </div><!-- einde geneste kolom -->
+                                    </div> <!-- einde row -->
+                                </div>
+                
+                                <div class="form-group">
+                                    <label for="formControlInput_belfius_1">
+                                        Naam kaarthouder:
+                                    </label>
+                                    <input type="email" class="form-control" id="formControlInput_belfius_1" placeholder="...">
+                                </div>
+                
+                                <div class="form-group">
+                                    <label for="formControlInput_belfius_2">
+                                        kaartnummer:
+                                    </label>
+                                    <input type="email" class="form-control" id="formControlInput_belfius_2" placeholder="XXXX XXXX XXXX XXXX X">
+                                </div>
+                
+                                <div class="form-group">
+                                    <label for="formControlInput_belfius_3">
+                                        Datum van verval:
+                                    </label>
+                                    <input type="email" class="form-control" id="formControlInput_belfius_3" placeholder=".../...">
+                                </div>
+                            </form> 
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="radios" id="radios1" value="option1" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" check>
+                                        <div class="card">
+                                            <div class="card-header" role="tab" id="headingTwo">
+                                                <h5 class="mb-0">
+                                                    <img src="{{ site.baseurl }}/images/betalen_1.png" alt="visa">
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="formControlInput_visa_1">Naam kaarthouder</label>
+                                    <input type="email" class="form-control" id="formControlInput_visa_1" placeholder="...">
+                                </div>
+                                    
+                                <div class="form-group">
+                                    <label for="formControlInput_visa_2">kaartnummer</label>
+                                    <input type="email" class="form-control" id="formControlInput_visa_2" placeholder="XXXX XXXX XXXX XXXX X">
+                                </div>
+                                    
+                                <div class="form-group">
+                                    <label for="formControlInput_visa_3">Datum van verval:</label>
+                                    <input type="email" class="form-control" id="formControlInput_visa_3" placeholder=".../...">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" role="tab" id="headingThree">
+                        <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="radios" id="radios1" value="option1" class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" check>
+                                        <div class="card">
+                                            <div class="card-header" role="tab" id="headingThree">
+                                                <h5 class="mb-0">
+                                                    <img src="{{ site.baseurl }}/images/betalen_2.png" alt="bancontact" >
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-check check_paw">
+                                    <!-- geneste kolom-->
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <input type="checkbox" class="form-check-input" id="conditions_qr2">
+                                            <label class="form-check-label checkbox_round" for="conditions_qr2">
+                                            </label>
+                                        </div><!-- einde geneste kolom -->
+                                                
+                                        <div class="col-10">
+                                            <label class="form-check-label">
+                                                QR-code scannen met de bancontact app
+                                            </label>
+                                        </div><!-- einde geneste kolom -->
+                                    </div> <!-- einde row -->
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="formControlInput_bancontact_1">Naam kaarthouder:</label>
+                                    <input type="email" class="form-control" id="formControlInput_bancontact_1" placeholder="...">
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="formControlInput_bancontact_2">Kaartnummer:</label>
+                                    <input type="email" class="form-control" id="formControlInput_bancontact_2" placeholder="XXXX XXXX XXXX XXXX X">
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="formControlInput_bancontact_3">Datum van verval:</label>
+                                    <input type="email" class="form-control" id="formControlInput_bancontact_3" placeholder=".../...">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
     
+        
             <!-- betaalmethode opties -->
             <div id="accordion" role="tablist" class="payment_methods">
                 <!-- opties 1 -->
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="radios" id="radios1" value="option1" check>
+                        <input class="form-check-input" type="radio" name="radios" id="radios1" value="option1" 
+                        data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" check>
                         <div class="card">
                             <div class="card-header" role="tab" id="headingOne">
                                 <h5 class="mb-0">
-                                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <img src="{{ site.baseurl }}/images/betalen_3.png" alt="belfius">
-                                    </a>
+                                    <img src="{{ site.baseurl }}/images/betalen_3.png" alt="belfius">
                                 </h5>
                             </div>
                         </div>
                     </label>
                 </div>
+                
                 <!-- collapse 1 belfius-->
                 <div id="collapseOne" class="collapse " role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                         <form>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="conditions">
-                                <label class="form-check-label checkbox_round" for="conditions">
-                                </label>
-                                <label class="form-check-label">
-                                    QR-code scannen met de bancontact app
-                                </label>
+                            <div class="form-check check_paw">
+                                <!-- geneste kolom-->
+                                <div class="row">
+                                    <div class="col-2">
+                                            <input type="checkbox" class="form-check-input" id="conditions">
+                                        <label class="form-check-label checkbox_round" for="conditions">
+                                        </label>
+                                    </div><!-- einde geneste kolom -->
+                            
+                                    <div class="col-10">
+                                        <label class="form-check-label">
+                                                QR-code scannen met de bancontact app
+                                        </label>
+                                    </div><!-- einde geneste kolom -->
+                                </div> <!-- einde row -->
                             </div>
     
                             <div class="form-group">
@@ -100,13 +273,11 @@ title: Reservatie
                 <!-- opties 2 -->
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="radios" id="radios2" value="option2">
+                        <input class="form-check-input" type="radio" name="radios" id="radios1" value="option1" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" check>
                         <div class="card">
                             <div class="card-header" role="tab" id="headingTwo">
                                 <h5 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <img src="{{ site.baseurl }}/images/betalen_1.png" alt="visa">    
-                                    </a>
+                                    <img src="{{ site.baseurl }}/images/betalen_1.png" alt="visa">
                                 </h5>
                             </div>
                         </div>
@@ -138,13 +309,11 @@ title: Reservatie
                 <!-- opties 3 -->
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="radios" id="radios3" value="option3">
+                        <input class="form-check-input" type="radio" name="radios" id="radios1" value="option1" class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" check>
                         <div class="card">
                             <div class="card-header" role="tab" id="headingThree">
                                 <h5 class="mb-0">
-                                    <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        <img src="{{ site.baseurl }}/images/betalen_2.png" alt="bancontact" >
-                                    </a>
+                                    <img src="{{ site.baseurl }}/images/betalen_2.png" alt="bancontact" >
                                 </h5>
                             </div>
                         </div>
@@ -155,11 +324,21 @@ title: Reservatie
                 <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
                     <div class="card-body">
                         <form>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox_1" value="option1">
-                                        QR-code scannen met de bancontact app
-                                </label>
+                            <div class="form-check check_paw">
+                                <!-- geneste kolom-->
+                                <div class="row">
+                                    <div class="col-2">
+                                        <input type="checkbox" class="form-check-input" id="conditions_qr2">
+                                        <label class="form-check-label checkbox_round" for="conditions_qr2">
+                                        </label>
+                                    </div><!-- einde geneste kolom -->
+                                    
+                                    <div class="col-10">
+                                        <label class="form-check-label">
+                                            QR-code scannen met de bancontact app
+                                        </label>
+                                    </div><!-- einde geneste kolom -->
+                                </div> <!-- einde row -->
                             </div>
             
                             <div class="form-group">
@@ -180,8 +359,9 @@ title: Reservatie
                     </div>
                 </div>
             </div>
+        
 
-            <a class="btn btn-primary" href="reservatie_bevestiging.html">Volgende</a>
+            <a class="btn btn-primary float-right" href="reservatie_bevestiging.html">Volgende</a>
         </div>
     </div>
 </div> <!-- container -->
