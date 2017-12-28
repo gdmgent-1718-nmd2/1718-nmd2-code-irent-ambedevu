@@ -72,12 +72,7 @@ label.checkbox_round{
     height: 22px;
 }
 
-#conditions:checked + label.checkbox_round{
-    background: url(../../images/lijstje.png);
-    background-size: 22px;
-}
-
-#conditions_qr2:checked + label.checkbox_round{
+#conditions:checked + label.checkbox_round, #conditions_qr1:checked + label.checkbox_round, #conditions_qr2:checked + label.checkbox_round{
     background: url(../../images/lijstje.png);
     background-size: 22px;
 }

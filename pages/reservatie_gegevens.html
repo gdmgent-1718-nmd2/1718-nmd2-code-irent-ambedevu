@@ -79,12 +79,20 @@ title: Reservatie
             <p class="note"><img src="{{ site.baseurl }}/images/lijstje.png"  alt="verplicht veld"> Verplichte velden</p>
 
             <div class="form-check check_paw">
-                <input type="checkbox" class="form-check-input" id="conditions">
-                <label class="form-check-label checkbox_round" for="conditions">
-                </label>
-                <label class="form-check-label">
-                    Ik accepteer de <span class="note_hover" data-toggle="modal" data-target="#modal_conditions">gebruiksvoorwaarden</span>
-                </label>
+                <!-- geneste kolom-->
+                <div class="row">
+                    <div class="col-1 col-md-1">
+                        <input type="checkbox" class="form-check-input" id="conditions">
+                        <label class="form-check-label checkbox_round" for="conditions">
+                        </label>
+                    </div><!-- einde geneste kolom -->
+                    
+                    <div class="col-10 col-md-11">
+                        <label class="form-check-label">
+                            Ik accepteer de <span class="note_hover" data-toggle="modal" data-target="#modal_conditions">gebruiksvoorwaarden</span>
+                        </label>
+                    </div><!-- einde geneste kolom -->
+                </div> <!-- einde row -->
             </div>
 
             <!-- Modal -->
