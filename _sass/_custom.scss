@@ -1,17 +1,10 @@
 body{
     font-family: 'Raleway', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 140%;
 }
 
 h1, h2, .modal-title{
-    /*
-    margin: 15px 0px 15px 0px;
-    padding: 10px 10px 10px 10px;
-    margin: 15px 0px 15px 0px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px 0px 0px 10px;
-    */
     font-family: 'Playfair Display', serif;
     font-weight: bold;
     font-size: 30px;
@@ -57,13 +50,6 @@ h1, h2, .modal-title{
     border: solid 2px rgba(177, 197, 204, 1);
     
 }
-
-.form-control>option:active{
-    /* WERKT NIET */
-    color: blue;
-    background-color: rgba(177, 197, 204, 1);
-    transition: 0.5s;
- }
 
 .form-group img{
     width:10px;
@@ -117,24 +103,18 @@ label.checkbox_round{
 }
 
 .payment_methods .card-header{
+    padding-bottom: 0px;
     border: none; 
     background-color: rgba(255, 255, 255, 1);
 }
 
 .payment_methods .form-check{
-    margin: 20px 0px 20px -20px;
+    margin: 20px 0px 20px 0px;
 }
 
 .payment_methods .form-check-input{
     margin-top: 20px;
 }
-/*
-.payment_methods .form-check-input:first-child{
-    margin-top: 20px;
-}
-.payment_methods .form-check-input:last-of-type{
-    margin-top: 40px;
-}*/
 
 p>img{
     width: 12px;
@@ -148,7 +128,6 @@ p>img{
 .form-check img{
     width: 100px;
 }
-
 
 /*intro*/
 .intro{
@@ -191,10 +170,7 @@ p>img{
     transition: 0.5s;
 }
 
-/*.no_padding{
-    padding-right: 3px;
-    padding-left: 0px;
-}*/
+/*speciale tekst*/
 
 .neg_blue{
     padding-right:0px
@@ -237,6 +213,10 @@ p>img{
     text-align: center;
 }
 
+.accent_bold{
+    font-weight: bold;
+}
+
 /* pijltjes */
 .row_center{
     display: flex;
@@ -255,10 +235,6 @@ p>img{
 }
 
 /*lijstjes*/
-/* .lijst>img{
-    width: 15px;
-    margin: 0px 8px 0px 20px;
-} */
 
 .lijst{
     font-size:11px;
@@ -275,13 +251,8 @@ li>img{
     margin-right: 8px;
 }
 
-
 /*
-ul img{
-    width: 15px;
-    list-style-image: url('{{ site.basurl }}/images/lijstje.png')
-} 
-
+--> werkte niet
 ul {
     list-style-image: url(../../images/lijstje.png);
     width: 10px;
@@ -290,18 +261,25 @@ ul {
 
 /* Carousel */
 .slide{
-    margin: 10px 0px 40px 0px;
+    margin: 10px 0px 20px 0px;
 }
 
-.carousel-control-next>img{
-    margin-right: 400px;
+.carousel-inner{
+    width: 90%;
+    margin: auto;
 }
 
-.carousel-control-prev-icon>img, .carousel-control-next-icon>img{
+.carousel-control-prev, .carousel-control-next{
     width: 50px;
 }
 
-.carousel-control-prev-icon>img:hover, .carousel-control-next-icon>img:hover, .carousel-control-prev-icon>img:active, .carousel-control-next-icon>img:active{
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    margin-top: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover, .carousel-control-prev-icon:active, .carousel-control-next-icon:active{
     transform: scale(1.2);
     transition: 0.5s;
 }
@@ -319,10 +297,6 @@ ul {
 .teddy_3{
     border-radius: 10px;
 }
-
-/*.carousel-control-prev-icon{
-    width: 40px;
-}*/
 
 /*COLLAPSE*/
 .card_thankyou{
@@ -345,35 +319,32 @@ ul {
 }
 
 /* BREADCRUMBS */
+
 .breadcrumb{
-    background-color: rgba(255, 255, 255, 1);
-    border: 2px solid rgba(177, 197, 204, 1);
+    text-align: center;
+    background-color: rgba(177, 197, 204, 1);
     border-radius:10px;
 }
 
 .breadcrumb-item{
-    color: rgba(99, 101, 113, 0.4)
+    color: rgba(255, 255, 255, 0.8);
 }
 
-.active{
-    color: rgba(177, 197, 204, 1);
+.breadcrumb .active{
+    color: rgba(255, 255, 255, 1);
     font-family: 'Raleway Semibold', sans-serif;
-}
+    font-weight: bold;
+} 
 
-/*.breadcrumb-item::before{
-    content:"|";
-}*/
+.breadcrumb .breadcrumb-item:nth-child(2)::before, .breadcrumb .breadcrumb-item:nth-child(3)::before, .breadcrumb .breadcrumb-item:nth-child(4)::before, .breadcrumb .breadcrumb-item:nth-child(5)::before{
+    content: "";
+    padding: 0px;
+}
 
 /* TABEL */
 .table{
-    margin-top: 20px;
     color: rgba(99, 101, 113, 1);
-    
 }
-
-/*tbody>tr{
-    border:none;
-}*/
 
 tbody>tr:first-of-type{
     border-bottom: dashed 2px rgba(177, 197, 204, 1);
@@ -383,10 +354,7 @@ tbody>tr:first-of-type{
 tbody>tr:last-of-type{
     border-top: solid 2px rgba(177, 197, 204, 1);
     font-weight: bold;
-    /*font-family: 'Raleway Semibold', sans-serif;*/
 }
-
-
 
 // Small devices (landscape phones, 576px and up)
 //@media (min-width: 576px) { ... }
@@ -399,18 +367,22 @@ tbody>tr:last-of-type{
 
 @media (min-width: 768px) {
 
+    body{
+        font-size: 14px;
+    }
+
     h1{
         font-size: 35px;
     }
-    /*
-    .title{
-        margin: 60px 0px 40px -15px;
-    }
-    */
+    
     .btn{
         border-radius: 8px;
         font-size: 1.5em;
         line-height: 140%;
+    }
+
+    .payment_methods{
+        padding: 0%  10%;
     }
     
     .intro{
@@ -442,18 +414,30 @@ tbody>tr:last-of-type{
         margin-top: 185px;
     }
 
-    .carousel{
-        margin: 0px;
+    .slide{
+        margin: 0px 0px 20px 0px;
     }
 
     .card_thankyou img{
         width: 100px;
         margin: 20px 0px -15px 40px;
     }
+
+    .breadcrumb{
+        margin: 20px 0px 40px 0px;
+    }
 }
 
 @media (min-width: 992px) {
 
+    .slide{
+        margin: 0px 0px 20px 0px;
+    }
+
+    .payment_methods .col-10{
+        padding: 0px 10px 0px 0px;
+    }
+    
     .intro{
         margin-bottom: 360px;
         border-radius: 0px 0px 10px 10px;
@@ -466,15 +450,20 @@ tbody>tr:last-of-type{
 
     .sticky {
         top: 20px;
-        width: 60%;
+        width: 65%;
     }
 
     .neg_blue p{
         margin: 40px 0px 40px 0px;
         padding: 20px 20px 20px 20px;
-        font-size: 16px;
+        font-size: 19px;
+        line-height: 140%;
     }
 
+    .text_center{
+        font-size: 19px;
+        line-height: 140%;
+    }
     .card_thankyou img{
         width: 200px;
         margin: 20px 0px -20px 150px;

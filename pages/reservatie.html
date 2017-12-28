@@ -13,7 +13,7 @@ title: Reservatie
     </div>
 
     <div class="row pijltje_box">
-        <div class="col-11 col-md-5 col-lg-3">
+        <div class="col-12 col-md-5 col-lg-4">
             <!-- kalender carousel -->
             <div id="carouselControls" class="carousel slide" data-ride="carousel" data-interval="false">
                 <div class="carousel-inner">
@@ -55,11 +55,11 @@ title: Reservatie
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"><img src="{{ site.baseurl }}/images/pijltje_links.png" class="" alt="vorige maanden"></span>
+                    <img src="{{ site.baseurl }}/images/pijltje_links.png" class="carousel-control-prev-icon" aria-hidden="true" alt="vorige maand">
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"><img src="{{ site.baseurl }}/images/pijltje_rechts.png" class="" alt="volgende maanden"></span>
+                    <img src="{{ site.baseurl }}/images/pijltje_rechts.png" class="carousel-control-next-icon" aria-hidden="true" alt="volgende maand">
                     <span class="sr-only">Next</span>
                 </a>
             </div>
@@ -77,18 +77,18 @@ title: Reservatie
             </ul>
         </div>
 
-        <div class="col-12 col-md-7 col-lg-7">
+        <div class="col-12 col-md-7 col-lg-8">
                 
         
             <p>Selecteer de gewenste datum, vermits beschikbaarheid van Teddy. Wij zorgen er dan voor dat hij klaar zal liggen aan de kassa van Kinepolis Gent.
             </p>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-6">
+                <div class="col-4 col-md-4 col-lg-3">
                     <!-- formulieren -->
                     <!-- datum -->
                     <form>
                         <div class="form-group">
-                            <label for="date">Datum:</label>
+                            <label for="date">Dag:</label>
                             <select class="form-control" id="date">
                                 <option>1</option>
                                 <option>2</option>
@@ -123,7 +123,11 @@ title: Reservatie
                                 <option>31</option>
                             </select>
                         </div>
+                    </form>
+                </div>
 
+                <div class="col-8 col-md-6 col-lg-6">
+                    <form>
                         <!-- maand -->
                         <div class="form-group">
                             <label for="month">Maand:</label>
@@ -145,29 +149,33 @@ title: Reservatie
                     </form>
                 </div> <!-- geneste kolom -->
                 
-                <div class="col-12 col-md-6 col-lg-6"> 
+                <div class="col-6 col-md-4 col-lg-4"> 
                     <form>
                         <!-- jaar -->
                         <div class="form-group">
                             <label for="year">Jaar:</label>
                             <select class="form-control" id="year">
-                                <option>2017</option>
                                 <option>2018</option>
                                 <option>2019</option>
                                 <option>2020</option>
                                 <option>2021</option>
+                                <option>2022</option>
                             </select>
                         </div>
-                
+                    </form>
+                </div>
+                    
+                <div class="col-12 col-md-6 col-lg-5">
+                    <form>
                         <!-- uur -->
                         <div class="form-group">
                             <label for="hours">Uur: <img src="{{ site.baseurl }}/images/lijstje.png"  alt="verplicht veld"></label>
-                            <input type="hours" class="form-control" id="hours" placeholder="voer hier de uren in">    
+                            <input type="hours" class="form-control" id="hours" placeholder=".../... - .../...">    
                         </div>
                     </form>
                 </div> <!-- geneste kolom -->
             </div> <!-- row-->
-            <p class="note"><img src="{{ site.baseurl }}/images/lijstje.png" alt="verplicht veld"> Vul hier het begin en eind uur van de film toe</p>
+            <p class="note"><img src="{{ site.baseurl }}/images/lijstje.png" alt="verplicht veld"> Voeg hier het begin- en eind uur van de film toe</p>
 
             <a class="btn btn-primary float-right" href="reservatie_gegevens.html">Volgende</a>
 

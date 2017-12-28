@@ -7,25 +7,30 @@
 
 nav.navbar{
     background-color: rgba(99, 101, 113,1)!important;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .navbar-toggler{
     border: none;
 }
 
-.navbar-toggler:hover, .navbar-toggler:active{
+.navbar-toggler-icon:hover, .navbar-toggler-icon:active{
     border: none;
-    color: rgba(255, 255, 255,1);
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
+nav.navigation-item{
+    border: 2px;
+}
+/* WERKT NIET 
 nav .navbar-nav{
     margin-right: 40px;
 }
 nav li{
     color:rgba(255, 255, 255,1)!important;
 }
-/* WERKT NIET 
+
 nav a{
     color: rgba(255, 255, 255,1);
 }
